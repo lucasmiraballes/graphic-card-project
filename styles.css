@@ -300,7 +300,7 @@ h1 {
 
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 636px) {
     .footer-container {
         flex-direction: column;
         place-items: center;
