@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Onest', sans-serif;
+}
+
+nav {
+    background-color: #091f0efb;
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo-container {
+    margin-right: auto;
+}
+
+.img-logo {
+    width: 90px;
+}
+
+.nav-categories {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-categories ul {
+    list-style-type: none;
+}
+
+.nav-categories ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-categories ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-categories ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-categories ul li a:hover {
+    color: greenyellow;
+}
+
+#li-offer {
+    color: rgb(58, 224, 16);
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    font-size: 50px;
+    text-shadow: 1px 1px 5px green;
+}
+
+.main {
+    background-color: rgba(253, 253, 253, 0.603);
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgb(177, 175, 175);
+}
+
+.graphic-img {
+    max-width: 260px;
+    max-height: 260px;
+    padding:10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px rgba(54, 153, 14, 0.233);
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    min-height: 295px;
+}
+
+.graphic-info, .other-specs ul {
+    margin-left: 20px;
+}
+
+.graphic-info-title {
+    font-size: 25px;
+}
+
+.important-title {
+    color: rgb(9, 97, 9);
+}
+
+.other-specs {
+    margin-top: 30px;
+}
+
+.price-info {
+    justify-content: end;
+    margin: 0 auto;
+    margin-right: 0px;
+}
+
+.old-price, .new-price, .save {
+    margin-top: 10px;
+}
+
+.old-price {
+    font-size: 15px;
+    color: rgb(151, 147, 147);
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+}
+
+.save {
+    color: green;
+    font-size: 20px;
+}
+
+.fa-solid {
+    font-size: 35px;
+    padding: 10px; 
+}
+
+#buy-button {
+    display: flex;
+    place-items: center;
+    margin-top: 30px;
+    background: radial-gradient(circle, rgb(231, 117, 117), rgb(255, 0, 0));
+    border: 1px solid rgb(173, 173, 173);
+    cursor: pointer;
+    transition: 0.15s;
+    margin-bottom: 10px;
+}
+
+#buy-button:hover {
+    transform: scale(1.1);
+    transition: 0.15s;
+}
+
+.buy {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.price-info-responsive, .old-price-responsive, .new-price-responsive, .save-responsive, #buy-button-responsive, .fa-solid-responsive, .fa-cart-shopping-responsive, .buy-responsive {
+    display: none;
+}
+
+.footer-container {
+    margin-top: 135px;
+    background-color: rgb(101, 131, 100);
+    padding: 28px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.fa-phone, .fa-envelope, .fa-location-dot {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .other-specs {
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .other-specs {
+        font-size: 14px;
+    }
+
+    .graphic-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .graphic-info-title {
+        font-size: 17px;
+    }
+
+    .old-price, .new-price, .save {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+
+    .price-info {
+        display: none;
+    }
+
+    .price-info-responsive, .old-price-responsive, .new-price-responsive, .save-responsive, .buy-button-responsive, .fa-solid-responsive, .fa-cart-shopping-responsive, .buy-responsive, .buy-responsive > b {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .price-info-responsive {
+        margin-top: 5px;
+    }
+
+    .old-price-responsive {
+        color: rgb(151, 147, 147);
+        text-decoration: line-through;
+    }
+
+    .new-price-responsive {
+        color: red;
+        font-size: 20px;
+    }
+
+    .save-responsive {
+        color: green;
+    }
+
+    .fa-solid {
+        font-size: 25px;
+        padding: 5px; 
+    }
+
+    #buy-button-responsive {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        background: radial-gradient(circle, rgb(231, 117, 117), rgb(255, 0, 0));
+        border: 1px solid rgb(173, 173, 173);
+        cursor: pointer;
+        transition: 0.15s;
+        margin-bottom: 8px;
+    }
+    
+    .buy-responsive {
+        margin-right: 10px;
+        font-size: 30px;
+        margin: 0 auto;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .main {
+        flex-direction: column; /* Cambia la dirección de los contenedores principales a columnas */
+    }
+
+    .cards {
+        flex-direction: column; /* Cambia la dirección de los contenedores secundarios a columnas */
+    }
+
+    .other-specs {
+        display: block;
+    }
+
+    .graphic-info {
+        margin-left: 0; /* Restablece el margen izquierdo para alinear correctamente los detalles de la tarjeta gráfica */
+    }
+
+    .price-info {
+        margin: 0 auto;
+        margin-left: 0;
+        justify-content: start; /* Centra los precios y el botón de compra */
+        display: block;
+    }
+
+    .price-info-responsive {
+        display: none;
+    }
+
+    .graphic-img {
+        margin-left: auto; /* Centra la imagen de la tarjeta gráfica */
+        margin-right: auto;
+    }
+
+    .old-price {
+        margin-top: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 580px) {
+    .footer-container {
+        flex-direction: column;
+        place-items: center;
+    }
+}

@@ -1,0 +1,1 @@
+console.log('Hello, dev here :) this is a fake webpage I made for a simple project just using HTML and CSS. Images and info were used from ThotComputacion just for educational purposes.')
